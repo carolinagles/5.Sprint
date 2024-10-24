@@ -64,6 +64,7 @@ if scatter_check:
         # Create scatter plot
         fig = px.scatter(car_data, x=col_x, y=col_y, title=f'{
                          col_x} vs {col_y}', trendline='ols')
+
         # Show scatter plot
         st.plotly_chart(fig, use_container_width=True)
     except Exception as e:
