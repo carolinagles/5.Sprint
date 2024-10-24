@@ -62,8 +62,8 @@ if scatter_check:
     try:
         st.write(f'Creating a scatter plot for **{col_x}** vs **{col_y}**')
         # Create scatter plot
-        fig = px.scatter(car_data, x=col_x, y=col_y, title=f'{
-                         col_x} vs {col_y}', trendline='ols')
+        fig = px.scatter(car_data, x=col_x, y=col_y,
+                         title='{ col_x} vs {col_y}', trendline='ols')
 
         # Show scatter plot
         st.plotly_chart(fig, use_container_width=True)
